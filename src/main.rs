@@ -16,7 +16,7 @@ async fn main() {
                 if bytes_read == 0 {
                     break;
                 }
-                write.write_all(&line.as_bytes()).await.unwrap();
+                write.write_all(line.as_bytes()).await.unwrap();
             }
         });
     }
